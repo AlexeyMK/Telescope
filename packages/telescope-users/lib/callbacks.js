@@ -132,4 +132,5 @@ Telescope.callbacks.add("onCreateUser", setupUser);
 function hasCompletedProfile (user) {
   return Users.hasCompletedProfile(user);
 }
+
 Telescope.callbacks.add("profileCompletedChecks", hasCompletedProfile);

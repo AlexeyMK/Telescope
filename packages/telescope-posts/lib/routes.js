@@ -15,7 +15,8 @@ FlowRouter.route('/posts/:_id/edit', {
 FlowRouter.route('/posts/:_id/:slug?', {
   name: "postPage",
   action: function(params, queryParams) {
-    BlazeLayout.render("layout", {main: "post_page"});
+    BlazeLayout.render("layout",
+      {main: "post_page", customHeader: "post_page_header"});
   }
 });
 
